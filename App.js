@@ -53,17 +53,18 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text style={{ fontSize: 30 }}>Shopping List 🛍️</Text>
+      <Text style={{ fontSize: 30 }}>Lista de Medicamentos para solicitar</Text> 
+      
       <View style={styles.inputcontainer}>
         <TextInput
-          placeholder="new item"
+          placeholder="Escriba su medicamento"
           placeholderTextColor="white"
           style={styles.inputStyle}
           value={textItem}
           onChangeText={onHandleChange}
         />
         <TouchableOpacity style={styles.button} onPress={addItem}>
-          <Text> Add </Text>
+          <Text> + </Text>
         </TouchableOpacity>
       </View>
       <View>
@@ -81,7 +82,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#344955",
+    backgroundColor: "lightblue",
     alignItems: "center",
     paddingTop: 100,
   },
@@ -99,7 +100,7 @@ const styles = StyleSheet.create({
     width: 250,
   },
   button: {
-    backgroundColor: "#F9AA33",
+    backgroundColor: "lightgreen",
     height: 35,
     width: 45,
     justifyContent: "center",
